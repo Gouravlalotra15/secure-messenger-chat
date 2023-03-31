@@ -1,18 +1,16 @@
 <p align="center">
-  <a href="https://github.com/daxter-army/drift/">
+  <a href="https://github.com/Gouravlalotra15/secure-messenger-chat">
     <img src="./readme/drift_large.svg"/>
   </a>
   <p align="center">
     AES Encrypted Messenger
-    <br />
-    <a target="_blank" href="https://daxter-drift.herokuapp.com">Visit</a>
   </p>
 </p>
 
 ## 🕹️ Demo
 
 <p align="center">
-<img src="./readme/demo-video.gif" width="600px"/>
+<img src="./readme/demo-video.gif" width="800px"/>
 </p>
 
 ## ✨ Introduction
