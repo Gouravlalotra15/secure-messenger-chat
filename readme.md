@@ -29,8 +29,8 @@ This app comes with a load a features and an amazing UI, which I call, is Hacker
 
 <br/>
 <p align="center">
-<img src="./readme/two.png" width="350px"/>
-<img src="./readme/one.png" width="350px"/>
+<img src="./readme/ss-1.png" width="300px" height="200"/>
+<img src="./readme/ss-2.png" width="350px"/ height="200">
 </p>
 
 ## 🔧 Development
