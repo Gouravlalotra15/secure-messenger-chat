@@ -6,7 +6,7 @@ import ScrollToBottom from "react-scroll-to-bottom";
 
 import styles from "./Chat.module.css";
 
-const ENDPOINT = "https://secure-chat-messenger.onrender.com/";
+const ENDPOINT = "https://secure-messenger-chat-5qsz.vercel.app/";
 const socket = io.connect(ENDPOINT);
 
 const Chat = () => {
