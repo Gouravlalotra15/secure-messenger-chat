@@ -20,7 +20,7 @@ const server = http.createServer(app);//intializing server
 
 const io = new Server(server, {
   cors: {
-    origin: "https://secure-chat-messenger.onrender.com/",
+    origin: "https://secure-messenger-chat-5qsz.vercel.app/",
     methods: ["GET", "POST"],
   },
 });
