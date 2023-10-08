@@ -15,7 +15,7 @@ console.log(homeDir);
 app.use(cors());
 app.use(express.static(homeDir));// use this path to serve static assest(used in prodeuction only)
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 10000;
 const server = http.createServer(app);//intializing server
 
 const io = new Server(server, {
