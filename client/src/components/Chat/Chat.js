@@ -6,7 +6,7 @@ import ScrollToBottom from "react-scroll-to-bottom";
 
 import styles from "./Chat.module.css";
 
-const ENDPOINT = "https://secure-messenger-chat-5qsz.vercel.app/";
+const ENDPOINT = "https://secure-chat-messenger.onrender.com";
 const socket = io.connect(ENDPOINT);
 
 const Chat = () => {
@@ -29,7 +29,6 @@ const Chat = () => {
   const messageHandler = async () => {
     if (currentMessage !== "") {
       console.log("SENDING ENCRYPTED MESSAGE!");
-      // console.log("message:", currentMessage, "\n", "key: ", secretKey.current);
       const messageData = {
         uid: new Date().getMilliseconds(),
         message: AES.encrypt(currentMessage, secretKey.current).toString(),
@@ -70,13 +69,6 @@ const Chat = () => {
     socket.on("receive_message", (data) => {
       if (data.author !== "admin") {
         console.log("DECRYPTING RECEIVED MESSAGE!");
-        // console.log(
-        //   "message: ",
-        //   data.message,
-        //   "\n",
-        //   "key: ",
-        //   secretKey.current
-        // );
         setMessageList((prevList) => [
           ...prevList,
           {
@@ -87,7 +79,6 @@ const Chat = () => {
           },
         ]);
       } else {
-        // because admin messages are not encrypted
         setMessageList((prevList) => [...prevList, data]);
       }
     });
